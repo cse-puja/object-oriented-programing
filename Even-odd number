@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class Evenodd{
+public:
+    void check() {
+    int x = 50;
+    cin >>x;
+    int even = 0;
+    int odd =0;
+    for (int i = 1; i<= x; i = i + 1){
+        if (i % 2 == 0) {
+            even = even + 1;
+        } else{
+          odd = odd + 1;
+          }
+    }
+    cout<<"Total Even: "<< even<<endl;
+    cout<<"Total odd: "<<odd<<endl;
+
+    }
+};
+int main() {
+   Evenodd obj;
+   obj. check();
+   return 0;
+}
+
